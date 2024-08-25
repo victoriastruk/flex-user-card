@@ -1,0 +1,86 @@
+html {
+  --user-photo-width: 150px;
+  --user-photo-height: 150px;
+  --text-color: #424242;
+  --icon-color: #f96332;
+  --button-color: #007bff;
+  --background-card: #fff;
+}
+
+body {
+  background: #eeeeee;
+  font-family: sans-serif;
+  color: var(--text-color);
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.user-cards {
+  gap: 10px;
+  max-width: 78.75rem;
+  min-width: 6.25rem;
+  width: 100%;
+  display: flex;
+  flex: 1 1 500px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.user-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 25px;
+  margin: 10px;
+  background: var(--background-card);
+  max-width: 550px;
+  width: 100%;
+  min-width: 100px;
+  border-radius: 5px;
+}
+
+.img {
+  width: var(--user-photo-width);
+  height: var(--user-photo-height);
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px grey;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.username {
+  font-size: 1.5em;
+}
+.firstname {
+  font-weight: 900;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icons-item {
+  color: var(--icon-color);
+}
+
+.button {
+  background-color: var(--button-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  margin: 3px;
+}
+
+.button:hover {
+  background-color: #0974e7;
+  cursor: pointer;
+}
